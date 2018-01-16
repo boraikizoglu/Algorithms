@@ -30,6 +30,10 @@ void printVector(vector<int> &vectorName) {
     cout << endl;
 }
 
+
+/*Time complexity of this algorithm is O(N), it is easier to solve this problem by just
+ iterating over and over again but time complexity of easier solution is O(N^2).
+ */
 int solution(vector<int> &A) {
     
     int sum = 0;
