@@ -26,7 +26,6 @@ Given an array <i>nums</i> containing <i>n</i> + 1 integers where each integer i
 ## 0003-equilibriumIndex.cpp
 
 <div id="brinza-task-description">
-<p>This is a demo task.</p>
 <p>A zero-indexed array A consisting of N integers is given. An <i>equilibrium index</i> of this array is any integer P such that 0 ≤ P &lt; N and the sum of elements of lower indices is equal to the sum of elements of higher indices, i.e. <br>
 </p>
 <blockquote><p>A[0] + A[1] + ... + A[P−1] = A[P+1] + ... + A[N−2] + A[N−1].<br>
