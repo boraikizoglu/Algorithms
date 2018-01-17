@@ -318,7 +318,7 @@ void countingSort(vector<int> &a){
         countArray[a[i]]++;
     }
     
-    //generates the result array
+    //generates the result vector
     vector<int> resultVector = generateResultVector(countArray,max);
 }
 
