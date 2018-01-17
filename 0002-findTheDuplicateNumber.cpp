@@ -25,6 +25,25 @@ using namespace std;
 
 //Bora Ikizoglu
 
+////This is my another approach. If all numbers are positive, we can find the duplicating array with a similiar idea to counting sort.
+
+////javascript solution
+//var findDuplicate = function(nums) {
+//
+//    let newArray = [];
+//    debugger;
+//    for(let i=0; i<nums.length; i++){
+//        if(newArray[nums[i]] == undefined){
+//            newArray[nums[i]]++;
+//        }
+//        else{
+//            return nums[i];
+//        }
+//    }
+//
+};
+
+
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
