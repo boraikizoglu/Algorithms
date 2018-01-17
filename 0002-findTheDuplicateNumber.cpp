@@ -25,7 +25,7 @@ using namespace std;
 
 //Bora Ikizoglu
 
-////This is my another approach. If all numbers are positive, we can find the duplicates with a similiar idea to counting sort.
+////This is my other approach. If all numbers are positive, we can find the duplicates with a similar idea to counting sort.
 
 ////javascript solution
 //var findDuplicate = function(nums) {
