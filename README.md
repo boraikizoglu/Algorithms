@@ -2,7 +2,7 @@
 
 
 ## 0001-sortingAlgorithmsRuntimeComparison.cpp
-![Runtime Comparison Result](https://github.com/boraikizoglu/Algorithms/blob/master/Images/runtimeComparisonResults.png)
+![Runtime Comparison Result](https://github.com/boraikizoglu/Algorithms/blob/master/Images/runtimeComparisonResult.png)
 
 
 ## 0002-findTheDuplicateNumber.cpp
