@@ -1,7 +1,26 @@
-#include <iostream>
-#include <string>
-#include <vector>
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
 #include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <string>
+#include <bitset>
+#include <cstdio>
+#include <limits>
+#include <vector>
+#include <climits>
+#include <cstring>
+#include <cstdlib>
+#include <fstream>
+#include <numeric>
+#include <sstream>
+#include <iostream>
+#include <algorithm>
+#include <unordered_map>
+
 using namespace std;
 
 //Bora Ikizoglu
@@ -258,19 +277,64 @@ void bubbleSort(vector<int> &a){
     cout << "Bubble sort time: " << (stop_s-start_s)/double(CLOCKS_PER_SEC)*1000 << " ms" << endl;
 }
 
+///----------------- Counting Sort -----------------
+
+vector<int> generateResultVector(const int *countArray, const int &max){
+    
+    vector<int> resultVector;
+    for(int i=0;i<max;i++){
+        for(int j=0; j<countArray[i];j++){
+            resultVector.push_back(i);
+        }
+    }
+    return resultVector;
+}
+
+int findMax(vector<int> &a){
+    int max=0;
+    for(int i=0; i<a.size(); i++){
+        if(a[i] > max)
+            max = a[i];
+    }
+    return max;
+}
+
+void countingSort(vector<int> &a){
+    
+    
+    //Counting sort is the fastest one since it isn't a comparison based sorting algortihm. Its time complexity is O(N)
+    //It is asumed that there isn't any negative numbers in the vector
+    
+    int max = findMax(a);
+    int countArray[max];
+    
+    //Creates an array of 0s
+    for(int i=0; i<max; i++){
+        countArray[i]=0;
+    }
+    
+    //Counts the numbers
+    for(int i=0;i<a.size();i++){
+        countArray[a[i]]++;
+    }
+    
+    //generates the result array
+    vector<int> resultVector = generateResultVector(countArray,max);
+}
+
 
 
 int main(){
     
     
     //creates the vector
-    vector<int> vector1, vector2, vector3, vector4, vector5, vector6;
-    
+    vector<int> vector1, vector2, vector3, vector4, vector5, vector6, vector7;
     
     int inputSize = 10000; //determine the input size(if it is too high like 10^5, it may take too much time)
     //inserts random integers to vector
     for(int i=0; i<inputSize; i++){
-        vector1.push_back(rand());
+        //Generates random numbers betwen 0-9999
+        vector1.push_back(rand()%10000);
     }
     
     vector2 = vector1;
@@ -278,6 +342,9 @@ int main(){
     vector4 = vector1;
     vector5 = vector1;
     vector6 = vector1;
+    vector7 = vector1;
+    
+    
     //bubble sort
     bubbleSort(vector1);
     
@@ -302,10 +369,11 @@ int main(){
     double stop_s2=clock();
     cout << "Quick sort time: " << (stop_s2-start_s2)/double(CLOCKS_PER_SEC)*1000 << " ms"<< endl;
     
-    //prints the vector
-    //printVector(vector6);
-    
+    //Counting Sort
+    double start_s3=clock();
+    countingSort(vector7);
+    double stop_s3=clock();
+    cout << "Counting sort time: " << (stop_s3-start_s3)/double(CLOCKS_PER_SEC)*1000 << " ms"<< endl;
     
     return 0;
 }
-
