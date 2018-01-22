@@ -64,3 +64,12 @@ Given an array <i>nums</i> containing <i>n</i> + 1 integers where each integer i
 <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).</li>
 </ul>
 </blockquote></div>
+
+## 0004-singleNumber.cpp
+
+<div class="question-description"><div><p>Given an array of integers, every element appears <i>twice</i> except for one. Find that single one.</p>
+
+<p>
+<b>Note:</b><br>
+Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+</p></div></div>
