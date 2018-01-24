@@ -73,3 +73,22 @@ Given an array <i>nums</i> containing <i>n</i> + 1 integers where each integer i
 <b>Note:</b><br>
 Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
 </p></div></div>
+
+## 0005-Pow(x, n).cpp
+
+<div><p>Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_blank">pow(<i>x</i>, <i>n</i>)</a>.
+</p>
+
+<br>
+
+<p><b>Example 1:</b>
+</p><pre><b>Input:</b> 2.00000, 10
+<b>Output:</b> 1024.00000
+</pre>
+<p></p>
+
+<p><b>Example 2:</b>
+</p><pre><b>Input:</b> 2.10000, 3
+<b>Output:</b> 9.26100
+</pre>
+<p></p></div>
